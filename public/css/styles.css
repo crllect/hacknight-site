@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+	--bgCol: url('../assets/bgImg.png');
+
+	--windowCol: #141414d1;
+	--windowBlur: 2vh;
+	--windowBrightness: 1;
+	--windowContrast: 1.1;
+	--frontElementCol: #f1f1f114;
+	--textCol: #fff;
+	--textColSec: #fff9;
+	--linkCol: #8320e7;
+
+	--shadowCol: var(--borderCol);
+	--shadowRad: 0px 4px 0px;
+
+	--uniMargin: 1vh;
+	--waybarHeight: 3.6vh;
+	--urlInputLength: 43vw;
+	--botBarHeight: 4.5vh;
+	--botBarFontSize: 0.8;
+	--fullMenuSize: 16vh;
+
+	--borderRad: 10px;
+	--borderThickness: 1.75px;
+	--borderCol: #090909df;
+
+	--transitionSpeed: 0.4s;
+	--fastTransitionSpeed: 0.1s;
+
+	--menuButtonCol: var(--textCol);
+
+	--activeTransition: var(--transitionSpeed);
+	--activeWindowCol: #25252ad1;
+	--activeWindowBlur: calc(var(--hoverWindowBlur) / 8);
+	--activeWindowBrightness: var(--hoverWindowBrightness);
+	--activeWindowContrast: var(--hoverWindowContrast);
+
+	--fullMenuOffset: 10px;
+
+	--hoverConst: 0vh;
+	--hoverCoefficient: 1;
+	--hoverWindowBlur: 2.1vw;
+	--hoverWindowBrightness: 1.2;
+	--hoverWindowContrast: 1.15;
+	--hoverBorderCol: #a1a1ffe7;
+	--hoverWindowCol: #141414d1;
+	--hoverBorderThickness: var(--borderThickness);
+	--hoverBorderRad: 0.8;
+	--hoverBorderOpacity: rgba(255, 255, 255, 1);
+	--hoverShadowCol: #a1a1ffe7;
+	--hoverShadowRad: 0px 4px 4px;
+	--hoverFrontElementCol: #f1f1f120;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans';
+	color: var(--textCol);
+	user-select: none;
+	background-image: var(--bgCol);
+	background-repeat: no-repeat;
+	background-size: calc(cover * 1.2);
+	background-color: var(--bgCol);
+	overflow: hidden;
+	flex-direction: column;
+}
+
+p {
+	padding: 2rem 4rem;
+	font-size: 1.5rem;
+}
+
+.mainContent {
+	display: flex;
+	flex-direction: row;
+	align-items: start;
+	justify-content: center;
+	width: 85vw;
+	height: 85vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(10px);
+	border-radius: 1rem;
+	box-shadow: 25px;
+	box-shadow: 0 0 25px #e70052;
+}
